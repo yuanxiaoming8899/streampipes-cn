@@ -1,221 +1,240 @@
-<!--
-  ~ Licensed to the Apache Software Foundation (ASF) under one or more
-  ~ contributor license agreements.  See the NOTICE file distributed with
-  ~ this work for additional information regarding copyright ownership.
-  ~ The ASF licenses this file to You under the Apache License, Version 2.0
-  ~ (the "License"); you may not use this file except in compliance with
-  ~ the License.  You may obtain a copy of the License at
-  ~
-  ~    http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
-  ~
-  -->
-
-[![Github Actions](https://img.shields.io/github/actions/workflow/status/apache/streampipes/build.yml)](https://github.com/apache/streampipes/actions/)
-[![Docker pulls](https://img.shields.io/docker/pulls/apachestreampipes/backend.svg)](https://hub.docker.com/r/apachestreampipes/backend/)
-![](https://img.shields.io/badge/java--version-17-blue.svg)
-[![Maven central](https://img.shields.io/maven-central/v/org.apache.streampipes/streampipes-service-core.svg)](https://img.shields.io/maven-central/v/org.apache.streampipes/streampipes-service-core.svg)
-[![License](https://img.shields.io/github/license/apache/streampipes.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Last commit](https://img.shields.io/github/last-commit/apache/streampipes.svg)]()
-[![Apache StreamPipes](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/q1jdu2&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/q1jdu2/runs)
-[![Contributors](https://img.shields.io/github/contributors/apache/streampipes)](https://github.com/apache/streampipes/graphs/contributors)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/apache/streampipes)
-[![GitHub issues by-label](https://img.shields.io/github/issues/apache/streampipes/good%20first%20issue)](https://github.com/apache/streampipes/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text">
+<p dir="auto"><a href="https://github.com/apache/streampipes/actions/"><img src="https://camo.githubusercontent.com/73b80dd17964c4223fb1c19bfdd189d11233e5b3388aa8b9abf952e0fd1cdf75/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f616374696f6e732f776f726b666c6f772f7374617475732f6170616368652f73747265616d70697065732f6275696c642e796d6c" alt="Github 操作" data-canonical-src="https://img.shields.io/github/actions/workflow/status/apache/streampipes/build.yml" style="max-width: 100%;"></a>
+<a href="https://hub.docker.com/r/apachestreampipes/backend/" rel="nofollow"><img src="https://camo.githubusercontent.com/2265fc699b825ba5960e45e3cd63f6fbf9078f32e5f43154df6b75daeec50077/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f61706163686573747265616d70697065732f6261636b656e642e737667" alt="Docker 拉取" data-canonical-src="https://img.shields.io/docker/pulls/apachestreampipes/backend.svg" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/11e8997ede0ce99f1159e7f4f4c458472f991e968a61fc0f005ed6f01c73518d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176612d2d76657273696f6e2d31372d626c75652e737667"><img src="https://camo.githubusercontent.com/11e8997ede0ce99f1159e7f4f4c458472f991e968a61fc0f005ed6f01c73518d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176612d2d76657273696f6e2d31372d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/java--version-17-blue.svg" style="max-width: 100%;"></a>
+<a href="https://img.shields.io/maven-central/v/org.apache.streampipes/streampipes-service-core.svg" rel="nofollow"><img src="https://camo.githubusercontent.com/6be13f0150ee923c7931ae45efbb5c43f2c352da138609c9bcc95be6c8f9cbe0/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f6f72672e6170616368652e73747265616d70697065732f73747265616d70697065732d736572766963652d636f72652e737667" alt="Maven中央" data-canonical-src="https://img.shields.io/maven-central/v/org.apache.streampipes/streampipes-service-core.svg" style="max-width: 100%;"></a>
+<a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow"><img src="https://camo.githubusercontent.com/1f3b6a437bd0271785edec271cf07a5ce133e29cb8e5db174b69f1b68cd1a778/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6170616368652f73747265616d70697065732e737667" alt="执照" data-canonical-src="https://img.shields.io/github/license/apache/streampipes.svg" style="max-width: 100%;"></a>
+<a href="/apache/streampipes/blob/dev"><img src="https://camo.githubusercontent.com/2a927246c4d8e507ac4ac9f02270785d7576fda9b0b162b62622e99a237f521e/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6173742d636f6d6d69742f6170616368652f73747265616d70697065732e737667" alt="最后一次提交" data-canonical-src="https://img.shields.io/github/last-commit/apache/streampipes.svg" style="max-width: 100%;"></a>
+<a href="https://dashboard.cypress.io/projects/q1jdu2/runs" rel="nofollow"><img src="https://camo.githubusercontent.com/cbe6c43198c79c2adce282885afe96a305366c46e6c13ccc391ee32094e7e6ad/68747470733a2f2f696d672e736869656c64732e696f2f656e64706f696e743f75726c3d68747470733a2f2f64617368626f6172642e637970726573732e696f2f62616467652f64657461696c65642f71316a647532267374796c653d666c6174266c6f676f3d63797072657373" alt="阿帕奇流管道" data-canonical-src="https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/q1jdu2&amp;style=flat&amp;logo=cypress" style="max-width: 100%;"></a>
+<a href="https://github.com/apache/streampipes/graphs/contributors"><img src="https://camo.githubusercontent.com/86f7202fbc16f6f618a4ee92a738d9944a1c1f6a101fbd2e89d3b98c1f21507f/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f636f6e7472696275746f72732f6170616368652f73747265616d7069706573" alt="贡献者" data-canonical-src="https://img.shields.io/github/contributors/apache/streampipes" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9128d9b3ef5a1e8837aab69ca2f26c2c373049d9cc9a67985cc47a84a62a8c92/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f636f6d6d69742d61637469766974792f792f6170616368652f73747265616d7069706573"><img src="https://camo.githubusercontent.com/9128d9b3ef5a1e8837aab69ca2f26c2c373049d9cc9a67985cc47a84a62a8c92/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f636f6d6d69742d61637469766974792f792f6170616368652f73747265616d7069706573" alt="GitHub 提交活动" data-canonical-src="https://img.shields.io/github/commit-activity/y/apache/streampipes" style="max-width: 100%;"></a>
+<a href="https://github.com/apache/streampipes/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"><img src="https://camo.githubusercontent.com/bdcba4c1b72f6c897b67092c1f1e6fbe5c26c0800025bed5ac5850767acfa4ab/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f6170616368652f73747265616d70697065732f676f6f6425323066697273742532306973737565" alt="GitHub 按标签发布问题" data-canonical-src="https://img.shields.io/github/issues/apache/streampipes/good%20first%20issue" style="max-width: 100%;"></a>
 <br>
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/company/apache-streampipes)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/StreamPipes)
-
-<h1 align="center">
+<a href="https://linkedin.com/company/apache-streampipes" rel="nofollow"><img src="https://camo.githubusercontent.com/591c02e8ff595d43e0b35b1b29aed639a7154b959cd8f8c854b9e176d885b094/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c696e6b6564496e2d3030373742353f7374796c653d666f722d7468652d6261646765266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465" alt="领英" data-canonical-src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" style="max-width: 100%;"></a>
+<a href="https://twitter.com/StreamPipes" rel="nofollow"><img src="https://camo.githubusercontent.com/0ac419eb4df53beeb48c20e036e8d66b075b28a56450d37427ee975d5e73ab75/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547769747465722d3144413146323f7374796c653d666f722d7468652d6261646765266c6f676f3d74776974746572266c6f676f436f6c6f723d7768697465" alt="推特" data-canonical-src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&amp;logo=twitter&amp;logoColor=white" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h1 align="center" tabindex="-1" class="heading-element" dir="auto">
   <br>
-   <img src="https://streampipes.apache.org/img/sp-logo-color.png" 
-   alt="StreamPipes Logo" title="Apache StreamPipes Logo" width="50%"/>
+   <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/101b69f2b43e9e6b01ada454df389441038cee25cf8e53ea50679e6f539a230f/68747470733a2f2f73747265616d70697065732e6170616368652e6f72672f696d672f73702d6c6f676f2d636f6c6f722e706e67"><img src="https://camo.githubusercontent.com/101b69f2b43e9e6b01ada454df389441038cee25cf8e53ea50679e6f539a230f/68747470733a2f2f73747265616d70697065732e6170616368652e6f72672f696d672f73702d6c6f676f2d636f6c6f722e706e67" alt="StreamPipes 徽标" title="Apache StreamPipes 徽标" width="50%" data-canonical-src="https://streampipes.apache.org/img/sp-logo-color.png" style="max-width: 100%;"></a>
   <br>
-</h1>
-<h3 align="center">Self-Service Data Analytics for the (Industrial) IoT</h3>
-<h4 align="center">StreamPipes is a self-service (Industrial) IoT toolbox to enable non-technical users to connect
-, analyze and explore IoT data streams. </h4>
-<p align="center">  
-    <img src="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-overview.png" alt="StreamPipes Overview"/>
+</h1><a id="user-content--------" class="anchor-element" aria-label="永久链接：" href="#-------"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 align="center" tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（工业）物联网的自助数据分析</font></font></h3><a id="user-content-self-service-data-analytics-for-the-industrial-iot" class="anchor-element" aria-label="永久链接：（工业）物联网的自助数据分析" href="#self-service-data-analytics-for-the-industrial-iot"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 align="center" tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StreamPipes 是一个自助式（工业）物联网工具箱，使非技术用户能够连接、分析和探索物联网数据流。</font></font></h4><a id="user-content-streampipes-is-a-self-service-industrial-iot-toolbox-to-enable-non-technical-users-to-connect-analyze-and-explore-iot-data-streams-" class="anchor-element" aria-label="永久链接：StreamPipes 是一个自助式（工业）物联网工具箱，使非技术用户能够连接、分析和探索物联网数据流。" href="#streampipes-is-a-self-service-industrial-iot-toolbox-to-enable-non-technical-users-to-connect-analyze-and-explore-iot-data-streams-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p align="center" dir="auto">  
+    <a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-overview.png"><img src="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-overview.png" alt="StreamPipe 概述" style="max-width: 100%;"></a>
 </p>
-
-
-***
-
-## Table of contents
-
-  * [About Apache StreamPipes](#about-apache-streampipes)
-  * [User interface](#userinterface)
-  * [Installation](#installation)
-  * [Documentation](#documentation)
-  * [Building StreamPipes](#building-streampipes)
-  * [Pipeline Elements](#pipeline-elements)  
-  * [Extending StreamPipes](#extending-streampipes)
-  * [Bugs and Feature Requests](#bugs-and-feature-requests)
-  * [Get help](#get-help)
-  * [Contribute](#contribute)
-  * [Feedback](#feedback)
-  * [License](#license)
-
-***
-
-## About Apache StreamPipes
-
-Apache StreamPipes makes industrial data analytics easy!
-
-StreamPipes is an end-to-end toolbox for the industrial IoT. 
-It comes with a rich graphical user interface targeted at non-technical users and provides the following features:
-
-
-* Quickly connect >20 industrial protocols such as OPC-UA, PLCs, MQTT, REST, Pulsar, Kafka and others.
-* Create data harmonization and analytics pipelines using > 100 algorithms and data sinks to forward data to third-party systems.
-* Use the data explorer to visually explore historical data with many widgets tailored for time-series data.
-* A live dashboard to display real-time data from data sources and pipelines, e.g., for shopfloor monitoring.
-
-
-StreamPipes is highly extensible and includes a Java SDK to create new 
-pipeline elements and adapters. Python support is available in an early development stage - stay tuned!  
-Pipeline elements are standalone microservices that can run anywhere -
-centrally on your server or close at the edge.
-You want to employ your own machine learning model on live data?
-Just write your own data processor and make it reusable as a pipeline element.
-
-Besides that, StreamPipes includes features for production deployments:
-
-* Assign resources such as pipelines, data streams and dashboards to assets for better organization
-* Monitoring & metrics of pipelines and adapters
-* Built-in user and access rights management
-* Export and import resources
-
-## User interface
-
-* Connect data from an OPC-UA server following a three-step configuration process:
-
-![StreamPipes Connect](https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-connect.gif)
-
-* Create a pipeline to detect a continuous decrease using a trend detection data processor and a ``Notification``sink:
-
-![StreamPipes Pipeline Editor](https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-pipelines.gif)
-
-* Visually analyze data using the data explorer:
-
-![StreamPipes Data Explorer](https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-data-explorer.gif)
-
-
-## Installation
-
-The quickest way to run StreamPipes including the latest extensions (adapters, pipeline elements) is by using our Docker-based [installation & operation options](installer), namely: 
-
-* **[StreamPipes Compose](installer/compose)** - The User's Choice
-* **[StreamPipes CLI](installer/cli)** - The Developer's Favorite
-* **[StreamPipes k8s](installer/k8s)** - The Operator's Dream
-
-> [!IMPORTANT] 
-> StreamPipes CLI & k8s are highly recommended for developers or operators. Standard users should stick to StreamPipes Compose.
-
-Please follow the instructions provided in the corresponding `README.md` to get started.
-
-For a more in-depth manual, read the [installation guide](https://streampipes.apache.org/docs/try-installation.html).
-
-> [!NOTE]
-> TL;DR: Download the latest release, switch to the ``installer/compose`` directory and run ``docker-compose up -d``.
-
-## Documentation
-
-The full documentation is available [here](https://streampipes.apache.org/docs/user-guide-introduction).
-
-Quick Links:
-
-* [Installation](https://streampipes.apache.org/docs/try-installation.html)
-* [Create adapters](https://streampipes.apache.org/docs/use-connect.html)
-* [Create pipelines](https://streampipes.apache.org/docs/use-pipeline-editor.html)
-* [Write your own pipeline elements](https://streampipes.apache.org/docs/extend-archetypes.html)
-
-## Building StreamPipes
-
-To properly build the StreamPipes core, the following tools should be installed:
-
-### Prerequisites
-* Java 17 JDK (We officially only support Java 17, JDKs above 17 might work as well, but we don't provide any guarantee)
-* Maven (tested with 3.8)
-* NodeJS + NPM (tested with v12+/ v6+)
-* Docker + Docker-Compose
-
-### Building
-
-To build the core project, do the following:
-
-```
-    mvn clean package
-```
-
-To build the ui, switch to the ``ui`` folder and perform the following steps:
-
-```
-    npm install
+<hr>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></h2><a id="user-content-table-of-contents" class="anchor-element" aria-label="永久链接：目录" href="#table-of-contents"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="#about-apache-streampipes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于 Apache StreamPipes</font></font></a></li>
+<li><a href="#userinterface"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户界面</font></font></a></li>
+<li><a href="#installation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a></li>
+<li><a href="#documentation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a></li>
+<li><a href="#building-streampipes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建 StreamPipes</font></font></a></li>
+<li><a href="#pipeline-elements"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管道元件</font></font></a></li>
+<li><a href="#extending-streampipes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展 StreamPipe</font></font></a></li>
+<li><a href="#bugs-and-feature-requests"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">错误和功能请求</font></font></a></li>
+<li><a href="#get-help"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">得到帮助</font></font></a></li>
+<li><a href="#contribute"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></a></li>
+<li><a href="#feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">反馈</font></font></a></li>
+<li><a href="#license"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></a></li>
+</ul>
+<hr>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于 Apache StreamPipes</font></font></h2><a id="user-content-about-apache-streampipes" class="anchor-element" aria-label="永久链接：关于 Apache StreamPipes" href="#about-apache-streampipes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache StreamPipes 让工业数据分析变得简单！</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StreamPipes 是工业物联网的端到端工具箱。</font><font style="vertical-align: inherit;">它配备了面向非技术用户的丰富的图形用户界面，并提供以下功能：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速连接超过 20 个工业协议，例如 OPC-UA、PLC、MQTT、REST、Pulsar、Kafka 等。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用超过 100 种算法和数据接收器创建数据协调和分析管道，将数据转发到第三方系统。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用数据浏览器通过许多专为时间序列数据定制的小部件来直观地探索历史数据。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实时仪表板，用于显示来自数据源和管道的实时数据，例如用于车间监控。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StreamPipes 具有高度可扩展性，并包含用于创建新管道元素和适配器的 Java SDK。</font><font style="vertical-align: inherit;">Python 支持已在早期开发阶段提供 - 敬请期待！</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+管道元素是独立的微服务，可以在任何地方运行 - 集中在服务器上或靠近边缘。</font><font style="vertical-align: inherit;">您想在实时数据上使用您自己的机器学习模型吗？</font><font style="vertical-align: inherit;">只需编写您自己的数据处理器并使其可作为管道元素重复使用。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">除此之外，StreamPipes 还包括用于生产部署的功能：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将管道、数据流和仪表板等资源分配给资产以实现更好的组织</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管道和适配器的监控和指标</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内置用户和访问权限管理</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">导出和导入资源</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户界面</font></font></h2><a id="user-content-user-interface" class="anchor-element" aria-label="永久链接：用户界面" href="#user-interface"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">按照三步配置过程连接来自 OPC-UA 服务器的数据：</font></font></li>
+</ul>
+<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-connect.gif" data-target="animated-image.originalLink"><img src="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-connect.gif" alt="StreamPipe 连接" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-connect.gif" target="_blank">
+          
+        <span data-target="animated-image.imageContainer">
+            <img data-target="animated-image.replacedImage" alt="StreamPipe 连接" class="AnimatedImagePlayer-animatedImage" src="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-connect.gif" style="display: block; opacity: 1;">
+          <canvas class="AnimatedImagePlayer-stillImage" aria-hidden="true" width="814" height="429"></canvas></span></a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1" aria-label="播放 StreamPipes 连接" hidden=""></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls" hidden="">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button" aria-label="播放 StreamPipes 连接">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="在新窗口中打开 StreamPipes Connect" class="AnimatedImagePlayer-button" href="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-connect.gif" target="_blank">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建一个管道以使用趋势检测数据处理器和接收器来检测连续下降</font></font><code>Notification</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></li>
+</ul>
+<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-pipelines.gif" data-target="animated-image.originalLink"><img src="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-pipelines.gif" alt="StreamPipes 管道编辑器" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-pipelines.gif" target="_blank">
+          
+        <span data-target="animated-image.imageContainer">
+            <img data-target="animated-image.replacedImage" alt="StreamPipes 管道编辑器" class="AnimatedImagePlayer-animatedImage" src="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-pipelines.gif" style="display: block; opacity: 1;">
+          <canvas class="AnimatedImagePlayer-stillImage" aria-hidden="true" width="814" height="417"></canvas></span></a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1" aria-label="播放 StreamPipes 管道编辑器" hidden=""></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls" hidden="">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button" aria-label="播放 StreamPipes 管道编辑器">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="在新窗口中打开 StreamPipes 管道编辑器" class="AnimatedImagePlayer-button" href="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-pipelines.gif" target="_blank">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用数据浏览器可视化分析数据：</font></font></li>
+</ul>
+<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-data-explorer.gif" data-target="animated-image.originalLink"><img src="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-data-explorer.gif" alt="StreamPipes 数据浏览器" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-data-explorer.gif" target="_blank">
+          
+        <span data-target="animated-image.imageContainer">
+            <img data-target="animated-image.replacedImage" alt="StreamPipes 数据浏览器" class="AnimatedImagePlayer-animatedImage" src="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-data-explorer.gif" style="display: block; opacity: 1;">
+          <canvas class="AnimatedImagePlayer-stillImage" aria-hidden="true" width="814" height="417"></canvas></span></a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1" aria-label="播放 StreamPipes 数据资源管理器" hidden=""></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls" hidden="">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button" aria-label="播放 StreamPipes 数据资源管理器">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="在新窗口中打开 StreamPipes 数据资源管理器" class="AnimatedImagePlayer-button" href="https://raw.githubusercontent.com/apache/streampipes/dev/images/streampipes-data-explorer.gif" target="_blank">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></h2><a id="user-content-installation" class="anchor-element" aria-label="永久链接：安装" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行 StreamPipes（包括最新扩展（适配器、管道元素））的最快方法是使用我们基于 Docker 的</font></font><a href="/apache/streampipes/blob/dev/installer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装和操作选项</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，即：</font></font></p>
+<ul dir="auto">
+<li><strong><a href="/apache/streampipes/blob/dev/installer/compose"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StreamPipes Compose</font></font></a></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 用户的选择</font></font></li>
+<li><strong><a href="/apache/streampipes/blob/dev/installer/cli"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StreamPipes CLI</font></font></a></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 开发人员的最爱</font></font></li>
+<li><strong><a href="/apache/streampipes/blob/dev/installer/k8s"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StreamPipes k8s</font></font></a></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 运营商的梦想</font></font></li>
+</ul>
+<div class="markdown-alert markdown-alert-important" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-report mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重要的</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">强烈建议开发人员或运营商使用 StreamPipes CLI 和 k8s。</font><font style="vertical-align: inherit;">标准用户应坚持使用 StreamPipes Compose。</font></font></p>
+</div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请按照相应的说明</font></font><code>README.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开始操作。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如需更深入的手册，请阅读</font></font><a href="https://streampipes.apache.org/docs/try-installation.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-alert markdown-alert-note" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TL;DR：下载最新版本，切换到</font></font><code>installer/compose</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录并运行</font></font><code>docker-compose up -d</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></h2><a id="user-content-documentation" class="anchor-element" aria-label="永久链接：文档" href="#documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">完整的文档可以</font></font><a href="https://streampipes.apache.org/docs/user-guide-introduction" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在这里</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速链接：</font></font></p>
+<ul dir="auto">
+<li><a href="https://streampipes.apache.org/docs/try-installation.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a></li>
+<li><a href="https://streampipes.apache.org/docs/use-connect.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建适配器</font></font></a></li>
+<li><a href="https://streampipes.apache.org/docs/use-pipeline-editor.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建管道</font></font></a></li>
+<li><a href="https://streampipes.apache.org/docs/extend-archetypes.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编写您自己的管道元素</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建 StreamPipes</font></font></h2><a id="user-content-building-streampipes" class="anchor-element" aria-label="永久链接：构建 StreamPipes" href="#building-streampipes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要正确构建 StreamPipes 核心，应安装以下工具：</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">先决条件</font></font></h3><a id="user-content-prerequisites" class="anchor-element" aria-label="永久链接：先决条件" href="#prerequisites"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Java 17 JDK（我们官方仅支持 Java 17，17 以上的 JDK 也可能有效，但我们不提供任何保证）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Maven（使用3.8测试）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NodeJS + NPM（使用 v12+/ v6+ 测试）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker + Docker-Compose</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建筑</font></font></h3><a id="user-content-building" class="anchor-element" aria-label="永久链接： 建筑" href="#building"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要构建核心项目，请执行以下操作：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>    mvn clean package
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="    mvn clean package" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要构建 ui，请切换到该</font></font><code>ui</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件夹&ZeroWidthSpace;&ZeroWidthSpace;并执行以下步骤：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>    npm install
     npm run build
-```
-
-### Starting
-
-To start StreamPipes, run ``docker-compose up --build -d`` from the root directory.
-
-You can also use the installer or CLI as described in the ``Installation`` section.
-
-## Pipeline Elements
-StreamPipes includes a repository of extensions for adapters and pipeline elements:
-* **Connect adapters** for a variety of IoT data sources as well as 
-* **Data Processors** and **Data Sinks** as ready-to-use pipeline elements. 
-
-The source code of all included pipeline elements and adapters can be found [here](https://github.com/apache/streampipes/tree/dev/streampipes-extensions).
-
-## Extending StreamPipes
-
-You can easily add your own data streams, processors or sinks. A [Java-based SDK](https://streampipes.apache.org/docs/extend-tutorial-data-processors.html) can be used to integrate your existing processing logic into StreamPipes. 
-Pipeline elements are packaged as Docker images and can be installed at runtime, whenever your requirements change.
-
-👉 Check our [developer guide](https://streampipes.apache.org/docs/extend-setup.html).
-
-## Bugs and Feature Requests
-
-If you've found a bug or have a feature that you'd love to see in StreamPipes, feel free to create an issue on GitHub:
-
-👉 [Bugs](https://github.com/apache/streampipes/issues)
-👉 [Feature requests](https://github.com/apache/streampipes/discussions/categories/ideas)
-
-## Get help
-
-If you have any problems during the installation or questions around StreamPipes, you'll get help through one of our 
-community channels:
-
-👉 [Mailing Lists](https://streampipes.apache.org/mailinglists.html)
-
-Or directly subscribe to [users-subscribe@streampipes.apache.org](mailto:users-subscribe@streampipes.apache.org)!
-
-👉 And don't forget to follow us on [Twitter](https://twitter.com/streampipes)!
-
-## Contribute
-
-We welcome all kinds of contributions to StreamPipes. If you are interested in contributing, let us know! You'll
- get to know an open-minded and motivated team working together to build the next IIoT analytics toolbox.
-
-Here are some first steps in case you want to contribute:
-* Subscribe to our dev mailing list [dev-subscribe@streampipes.apache.org](mailto:dev-subscribe@streampipes.apache.org)
-* Send an email, tell us about your interests and which parts of StreamPipes you'd like to contribute (e.g., core or UI)!
-* Ask for a mentor who helps you to understand the code base and guides you through the first setup steps
-* Find an issue on [GitHub](https://github.com/apache/streampipes/issues) which is tagged with a _good first issue_ label
-* Have a look at our developer [wiki](https://cwiki.apache.org/confluence/display/STREAMPIPES) to learn more about StreamPipes development.
-
-Have fun!
-
-## Feedback
-
-We'd love to hear your feedback! Subscribe to [users@streampipes.apache.org](mailto:users@streampipes.apache.org)
-
-## License
-
-[Apache License 2.0](LICENSE)
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="    npm install
+    npm run build" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开始</font></font></h3><a id="user-content-starting" class="anchor-element" aria-label="永久链接：开始" href="#starting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要启动 StreamPipes，请</font></font><code>docker-compose up --build -d</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从根目录运行。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以使用安装程序或 CLI，如 参考资料 部分中所述</font></font><code>Installation</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管道元件</font></font></h2><a id="user-content-pipeline-elements" class="anchor-element" aria-label="永久链接：管道元素" href="#pipeline-elements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StreamPipes 包括适配器和管道元素的扩展存储库：</font></font></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">连接</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">各种物联网数据源的适配器以及</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据处理器</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据接收器</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为即用型管道元素。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/apache/streampipes/tree/dev/streampipes-extensions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到所有包含的管道元素和适配器的源代码</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展 StreamPipe</font></font></h2><a id="user-content-extending-streampipes" class="anchor-element" aria-label="永久链接：扩展 StreamPipes" href="#extending-streampipes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以轻松添加自己的数据流、处理器或接收器。</font></font><a href="https://streampipes.apache.org/docs/extend-tutorial-data-processors.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于 Java 的 SDK</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可</font><font style="vertical-align: inherit;">用于将现有处理逻辑集成到 StreamPipes 中。</font><font style="vertical-align: inherit;">管道元素打包为 Docker 映像，并且可以在运行时安装，只要您的需求发生变化。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👉 查看我们的</font></font><a href="https://streampipes.apache.org/docs/extend-setup.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发者指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">错误和功能请求</font></font></h2><a id="user-content-bugs-and-feature-requests" class="anchor-element" aria-label="永久链接：错误和功能请求" href="#bugs-and-feature-requests"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您发现了错误或希望在 StreamPipes 中看到某个功能，请随时在 GitHub 上创建问题：</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👉</font></font><a href="https://github.com/apache/streampipes/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">错误</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+👉</font></font><a href="https://github.com/apache/streampipes/discussions/categories/ideas"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">功能请求</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">得到帮助</font></font></h2><a id="user-content-get-help" class="anchor-element" aria-label="永久链接：获取帮助" href="#get-help"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您在安装过程中遇到任何问题或对 StreamPipes 有疑问，您将通过我们的社区渠道之一获得帮助：</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👉</font></font><a href="https://streampipes.apache.org/mailinglists.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">邮件列表</font></font></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者直接订阅</font></font><a href="mailto:users-subscribe@streampipes.apache.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">users-subscribe@streampipes.apache.org</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">！</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👉 不要忘记在</font></font><a href="https://twitter.com/streampipes" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Twitter</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上关注我们！</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2><a id="user-content-contribute" class="anchor-element" aria-label="永久链接：贡献" href="#contribute"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们欢迎对 StreamPipes 做出各种贡献。</font><font style="vertical-align: inherit;">如果您有兴趣做出贡献，请告诉我们！</font><font style="vertical-align: inherit;">您将认识一个思想开放、积极进取的团队，他们共同努力构建下一个 IIoT 分析工具箱。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想做出贡献，请先执行以下一些步骤：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">订阅我们的开发邮件列表</font></font><a href="mailto:dev-subscribe@streampipes.apache.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dev-subscribe@streampipes.apache.org</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发送电子邮件，告诉我们您的兴趣以及您想贡献 StreamPipes 的哪些部分（例如，核心或 UI）！</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">寻求一位导师来帮助您理解代码库并指导您完成第一个设置步骤</font></font></li>
+<li><font style="vertical-align: inherit;"></font><a href="https://github.com/apache/streampipes/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在GitHub</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上查找带有</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">良好首期</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签的</font><font style="vertical-align: inherit;">问题</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请查看我们的开发者</font></font><a href="https://cwiki.apache.org/confluence/display/STREAMPIPES" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">wiki</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，了解有关 StreamPipes 开发的更多信息。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">玩得开心！</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">反馈</font></font></h2><a id="user-content-feedback" class="anchor-element" aria-label="永久链接：反馈" href="#feedback"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们很想听听您的反馈！</font><font style="vertical-align: inherit;">订阅</font></font><a href="mailto:users@streampipes.apache.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">users@streampipes.apache.org</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2><a id="user-content-license" class="anchor-element" aria-label="永久链接：许可证" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="/apache/streampipes/blob/dev/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿帕奇许可证 2.0</font></font></a></p>
+</article></div>
